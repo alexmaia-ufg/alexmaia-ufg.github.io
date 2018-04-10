@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    
-    <div class="container" style="background-color: #dae0e5">
+
+    <div class="container" style="background-color:white">
         <div>
             <h1>Calcule seu IMC e saiba se está no peso ideal</h1>
             <p>IMC é a sigla para Índice de Massa Corporal que serve para avaliar o peso do indivíduo em relação à sua altura
@@ -77,6 +77,49 @@
                 </form>
             </div>
         </div>
+        <!--Div para mostrar o resultado(Dive oculta)-->
+        <div id="resultado" class="form-group" style="margin-top: 16px; display:none; background-color: darkgrey;">
+            <div class="reslt" style="margin-left: 4pt">
+                <h1>Resultado</h1>
+            </div>
+            <div id="textoResultado" style="font-size: 20pt; margin-left: 4pt; color: darkred"></div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Classificação</th>
+                        <th scope="col">IMC</th>
+                        <th scope="col">PESO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Magreza</td>
+                        <td> Menor que 18.5</td>
+                        <td>menor 55.4 Kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Normal</td>
+                        <td>18.5 a 24.9 </td>
+                        <td>55.4 a 74.5 Kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Sobrepeso</td>
+                        <td>24.9 a 30</td>
+                        <td>74.5 a 89.8 Kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Obesidade</td>
+                        <td>Maior que 30</td>
+                        <td>Maior que 89.8 Kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div>
             <h1>O que significam os resultados do IMC</h1>
             <p>Cada resultado do IMC deve ser avaliado por um profissional de saúde.</p>
@@ -103,31 +146,46 @@
                     <td>Queda de cabelo, infertilidade, ausência menstrual</td>
                 </tr>
                 <tr>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
+                    <td>Abaixo do peso</td>
+                    <td>17 a 18,4 kg/m2</td>
+                    <td>Fadiga, stress, ansiedade</td>
                 </tr>
                 <tr>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
+                    <td>Peso normal</td>
+                    <td>18,5 a 24,9 kg/m2</td>
+                    <td>Menor risco de doenças cardíacas e vasculares</td>
                 </tr>
                 <tr>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
-                    <td>Texto Aqui</td>
+                    <td>Acima do peso</td>
+                    <td>25 a 29,9 kg/m2</td>
+                    <td>Fadiga, má circulação, varizes</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau I</td>
+                    <td>30 a 34,9 kg/m2</td>
+                    <td>Diabetes, angina, infarto, aterosclero</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau II</td>
+                    <td>35 a 40 kg/m2</td>
+                    <td>Apneia do sono, falta de ar</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau III</td>
+                    <td>maior que 40 kg/m2</td>
+                    <td>Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC</td>
                 </tr>
             </tbody>
         </table>
         <div style="text-align: justify">
-            <p>Quem não estiver dentro do peso ideal deve adequar a alimentação e fazer exercícios para conseguir 
-                atingir o peso mais indicado para sua altura e idade.
+            <p>Quem não estiver dentro do peso ideal deve adequar a alimentação e fazer exercícios para conseguir atingir o
+                peso mais indicado para sua altura e idade.
             </p>
-            <p>Quando se está abaixo do peso ideal deve-se aumentar o consumo de alimentos 
-                    ricos em nutrientes para que o corpo tenha o necessário para se proteger de doenças.
-                     Já quem está acima do peso ideal deve consumir menos calorias e fazer algum tipo de 
-                     atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.
-            </p> 
+            <p>Quando se está abaixo do peso ideal deve-se aumentar o consumo de alimentos ricos em nutrientes para que o corpo
+                tenha o necessário para se proteger de doenças. Já quem está acima do peso ideal deve consumir menos calorias
+                e fazer algum tipo de atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças
+                cardíacas.
+            </p>
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
